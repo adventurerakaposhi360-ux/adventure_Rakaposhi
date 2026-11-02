@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adventure Rakaposhi | Premier Tourism, Treks & Mountaineering Expeditions in Gilgit-Baltistan</title>
+  <meta name="description" content="Discover Gilgit-Baltistan Pakistan with Adventure Rakaposhi. High-end mountain treks, 5000m, 6000m, 7000m, 8000m expeditions, luxury destination weddings in Hunza, 4x4 vehicle rentals & gear. Inquire via WhatsApp for custom quotes.">
+  <meta name="keywords" content="Adventure Rakaposhi, Gilgit Baltistan Tourism, Rakaposhi Trek, K2 Expedition, 6000m Expedition, 7000m Expedition, Hunza Wedding, Skardu Tours, Pakistan Mountaineering, 4x4 Rental GB">
+
+  <!-- Google Fonts: Cormorant Garamond (Headings) + Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=10">
+</head>
+<body>
+
+  <!-- Sticky Glassmorphism Header -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo-link">
+        <img src="images/web/logo/logo.jpg" alt="Adventure Rakaposhi Logo" class="logo-badge" id="header-logo" width="160" height="160" onError="this.src='https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=200&q=80'">
+        <div class="logo-text-group">
+          <span class="brand-sub">Tourism & Expeditions</span>
+          <span class="brand-main">ADVENTURE RAKAPOSHI</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-pages">
+          <a href="experiences.html" class="nav-link">Experiences</a>
+          <a href="gallery.html" class="nav-link">Visual Gallery</a>
+          <a href="#districts" class="nav-link">Districts & Regions</a>
+          <a href="#weddings" class="nav-link">Weddings</a>
+          <a href="#trophy-hunting" class="nav-link">Trophy Hunting</a>
+          <a href="#guide" class="nav-link">Travel Guide</a>
+        </li>
+        <li class="nav-actions">
+          <div class="nav-contact">
+            <a href="#contact" class="nav-link">Contact</a>
+            <div class="nav-socials-group">
+              <a href="https://www.instagram.com/hussain_travel?stkn=MWN4OW56OHJlb2lyZA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="nav-social-btn" aria-label="Follow Adventure Rakaposhi on Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/share/1e9y3MTCi3/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="nav-social-btn" aria-label="Follow Adventure Rakaposhi on Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+          <button onclick="openCustomQuoteModal('General Inquiry')" class="nav-cta-btn">
+            <i class="fa-brands fa-whatsapp" style="font-size: 1.1rem;"></i> WhatsApp Business
+          </button>
+        </li>
+      </ul>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Dynamic Auto-Slideshow Section -->
+  <section class="hero" id="hero">
+    <!-- Auto-rotating Slides Container -->
+    <div class="hero-bg-wrapper" id="hero-slides-wrapper">
+      <!-- Injected dynamically via app.js -->
+    </div>
+    <div class="hero-overlay"></div>
+
+    <!-- Hero Navigation Arrows -->
+    <button class="hero-nav-arrow hero-nav-prev" onclick="prevHeroSlide()" aria-label="Previous slide">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button class="hero-nav-arrow hero-nav-next" onclick="nextHeroSlide()" aria-label="Next slide">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <!-- Hero Dots Control Indicator -->
+    <div class="hero-slider-controls" id="hero-dots-container"></div>
+
+    <div class="container hero-content">
+      <div class="hero-pill">
+        <span class="hero-pill-dot"></span>
+        <span id="hero-dynamic-sub">Gilgit-Baltistan, Pakistan Premier Tour Operator</span>
+      </div>
+      <h1 class="hero-title" id="hero-dynamic-title">
+        Journey Beyond The Clouds
+      </h1>
+      <p class="hero-description">
+        Explore 5,000m, 6,000m, 7,000m & 8,000m Karakoram summits, serene alpine treks, luxury destination weddings, and high-altitude vehicle safaris. Get instant custom quotations directly via WhatsApp Business.
+      </p>
+      <div class="hero-action-group">
+        <button onclick="openCustomQuoteModal('Tailor-Made Tour Package')" class="btn-primary-wa">
+          <i class="fa-brands fa-whatsapp" style="font-size: 1.3rem;"></i> Inquire on WhatsApp
+        </button>
+        <a href="#gallery" class="btn-secondary-outline">
+          View Photo Showcase <i class="fa-solid fa-images"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights Bar -->
+  <div class="container highlights-bar">
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <div class="highlight-icon-box"><i class="fa-brands fa-whatsapp text-forest"></i></div>
+        <div>
+          <div class="highlight-title">WhatsApp Direct Quote</div>
+          <div class="highlight-desc">No public pricing — custom quotes instantly</div>
+        </div>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon-box"><i class="fa-solid fa-mountain text-gold"></i></div>
+        <div>
+          <div class="highlight-title">High Elevation Expeditions</div>
+          <div class="highlight-desc">5000m, 6000m, 7000m & 8000m peaks</div>
+        </div>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon-box"><i class="fa-solid fa-gem text-gold"></i></div>
+        <div>
+          <div class="highlight-title">Luxury Destination Weddings</div>
+          <div class="highlight-desc">Attabad Lake & Hunza Valley staging</div>
+        </div>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon-box"><i class="fa-solid fa-truck-monster text-forest"></i></div>
+        <div>
+          <div class="highlight-title">4x4 Safaris & Gear Rental</div>
+          <div class="highlight-desc">Prado/LandCruiser & sub-zero equipment</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Tourism Offerings Section (Landing Page: 6 Featured Items) -->
+  <section class="section container" id="offerings">
+    <div class="section-header">
+      <span class="section-subtitle">GILGIT-BALTISTAN HIGHLIGHTS</span>
+      <h2 class="section-title">Featured Tourism & Mountaineering</h2>
+      <p class="section-description">
+        Browse a handpicked preview of our signature alpine treks, 7000m+ expeditions, luxury destination weddings, and 4x4 safaris across Karakoram. Explore our full catalog of 30+ adventures on our dedicated experiences page.
+      </p>
+    </div>
+
+    <!-- Dynamic Card Grid (Limited to 6 Premier Offerings on Home) -->
+    <div class="offerings-grid" id="offerings-grid">
+      <!-- Injected via app.js -->
+    </div>
+
+    <!-- CTA Box Directing to Separate Experiences Page -->
+    <div class="section-cta-container">
+      <div class="section-cta-box">
+        <span class="section-cta-badge"><i class="fa-solid fa-mountain"></i> Full Adventure Catalog</span>
+        <h3 class="section-cta-title">Looking for More Treks & Expeditions?</h3>
+        <p class="section-cta-text">
+          Discover our comprehensive collection of 16 alpine treks, 5000m to 8000m summits, family escapes, luxury honeymoon tours, and vehicle rentals with instant search and category filtering.
+        </p>
+        <a href="experiences.html" class="btn-primary-wa" style="padding: 14px 32px; font-size: 1rem; text-decoration: none;">
+          Explore All Experiences (30+ Adventures) <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dynamic Visual Photo Gallery Section (Landing Page: 6 Featured Photos) -->
+  <section class="section container" id="gallery">
+    <div class="section-header">
+      <span class="section-subtitle">JOURNEY IN PICTURES</span>
+      <h2 class="section-title">Gilgit-Baltistan Visual Showcase</h2>
+      <p class="section-description">
+        A curated glance at high-resolution moments from our mountain expeditions, wedding ceremonies, high-altitude alpine lakes, and 4x4 safaris across Karakoram.
+      </p>
+    </div>
+
+    <!-- Masonry Grid for 6 Photos -->
+    <div class="gallery-grid" id="gallery-grid">
+      <!-- Injected via app.js -->
+    </div>
+
+    <!-- CTA Box Directing to Separate Gallery Page -->
+    <div class="section-cta-container">
+      <div class="section-cta-box">
+        <span class="section-cta-badge"><i class="fa-solid fa-camera"></i> Full Photo Collection</span>
+        <h3 class="section-cta-title">View Our Complete Visual Archive</h3>
+        <p class="section-cta-text">
+          Immerse yourself in 50+ high-resolution expedition photographs, peak panoramas, alpine lake vistas, and cultural celebrations across Northern Pakistan.
+        </p>
+        <a href="gallery.html" class="btn-primary-wa" style="padding: 14px 32px; font-size: 1rem; text-decoration: none;">
+          View Full Visual Gallery (50+ Photos) <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fullscreen Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true">
+    <button onclick="closeLightbox()" class="modal-close-btn" style="top: 30px; right: 30px; background: rgba(255,255,255,0.2); color: #FFF;">&times;</button>
+    
+    <div class="lightbox-container">
+      <button class="lightbox-nav-arrow lightbox-prev" onclick="prevLightbox()"><i class="fa-solid fa-chevron-left"></i></button>
+      
+      <img src="" id="lightbox-img" alt="Gallery preview" class="lightbox-img">
+      
+      <button class="lightbox-nav-arrow lightbox-next" onclick="nextLightbox()"><i class="fa-solid fa-chevron-right"></i></button>
+
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+      <div class="lightbox-subcaption" id="lightbox-subcaption"></div>
+      
+      <a href="#" id="lightbox-wa-btn" target="_blank" rel="noopener noreferrer" class="btn-primary-wa" style="padding: 10px 24px; font-size: 0.88rem;">
+        <i class="fa-brands fa-whatsapp"></i> Inquire About This Location
+      </a>
+    </div>
+  </div>
+
+  <!-- Districts of Gilgit-Baltistan Showcase Section -->
+  <section class="section container" id="districts">
+    <div class="section-header">
+      <span class="section-subtitle">TERRITORIES & REGIONS</span>
+      <h2 class="section-title">Districts of Gilgit-Baltistan</h2>
+      <p class="section-description">
+        Explore the unique alpine geography, royal ancient forts, high-altitude desert plateaus, and glacial valleys across all major districts of Gilgit-Baltistan.
+      </p>
+    </div>
+
+    <div class="districts-grid">
+      <!-- Hunza -->
+      <div class="district-card" style="background-image: url('images/web/districts/HUnza.jpg');">
+        <div class="district-overlay"></div>
+        <div class="district-content">
+          <span class="district-badge"><i class="fa-solid fa-mountain-sun"></i> Territory</span>
+          <h3 class="district-name">Hunza District</h3>
+          <p class="district-desc">Karimabad, Altit & Baltit Forts, Passu Cones, Attabad Lake, Khunjerab Pass (Pak-China Border).</p>
+          <a href="https://wa.me/923555133394?text=Hi%20Adventure%20Rakaposhi!%20I%20would%20like%20to%20get%20a%20quote%20for%20a%20custom%20tour%20package%20in%20Hunza%20District." target="_blank" rel="noopener noreferrer" class="district-btn">
+            <i class="fa-brands fa-whatsapp"></i> Get Quote
+          </a>
+        </div>
+      </div>
+
+      <!-- Skardu -->
+      <div class="district-card" style="background-image: url('images/web/districts/Skardu.jpg');">
+        <div class="district-overlay"></div>
+        <div class="district-content">
+          <span class="district-badge"><i class="fa-solid fa-mountain"></i> Territory</span>
+          <h3 class="district-name">Skardu District</h3>
+          <p class="district-desc">Shangrila Resort, Upper Kachura Lake, Kharpocho Fort, Deosai Plains & Katpana Cold Desert.</p>
+          <a href="https://wa.me/923555133394?text=Hi%20Adventure%20Rakaposhi!%20I%20would%20like%20to%20get%20a%20quote%20for%20a%20custom%20tour%20package%20in%20Skardu%20District." target="_blank" rel="noopener noreferrer" class="district-btn">
+            <i class="fa-brands fa-whatsapp"></i> Get Quote
+          </a>
+        </div>
+      </div>
+
+      <!-- Ghizer -->
+      <div class="district-card" style="background-image: url('images/web/districts/Naltar lake.jpg');">
+        <div class="district-overlay"></div>
+        <div class="district-content">
+          <span class="district-badge"><i class="fa-solid fa-water"></i> Territory</span>
+          <h3 class="district-name">Ghizer District</h3>
+          <p class="district-desc">Phander Lake (Trout Haven), Shandur Pass (Highest Polo Ground), Khalti Lake, Yasin Valley.</p>
+          <a href="https://wa.me/923555133394?text=Hi%20Adventure%20Rakaposhi!%20I%20would%20like%20to%20get%20a%20quote%20for%20a%20custom%20tour%20package%20in%20Ghizer%20District." target="_blank" rel="noopener noreferrer" class="district-btn">
+            <i class="fa-brands fa-whatsapp"></i> Get Quote
+          </a>
+        </div>
+      </div>
+
+      <!-- Gilgit -->
+      <div class="district-card" style="background-image: url('images/web/districts/kutwal_lake.jpg');">
+        <div class="district-overlay"></div>
+        <div class="district-content">
+          <span class="district-badge"><i class="fa-solid fa-city"></i> Capital Hub</span>
+          <h3 class="district-name">Gilgit District</h3>
+          <p class="district-desc">Capital Hub, Naltar Valley Alpine Lakes & Ski Resort, Kargah Buddha Rock Carving, Bagrot Valley.</p>
+          <a href="https://wa.me/923555133394?text=Hi%20Adventure%20Rakaposhi!%20I%20would%20like%20to%20get%20a%20quote%20for%20a%20custom%20tour%20package%20in%20Gilgit%20District." target="_blank" rel="noopener noreferrer" class="district-btn">
+            <i class="fa-brands fa-whatsapp"></i> Get Quote
+          </a>
+        </div>
+      </div>
+
+      <!-- Shigar -->
+      <div class="district-card" style="background-image: url('images/web/districts/khosar Gang.jpg');">
+        <div class="district-overlay"></div>
+        <div class="district-content">
+          <span class="district-badge"><i class="fa-solid fa-fort-awesome"></i> Territory</span>
+          <h3 class="district-name">Shigar District</h3>
+          <p class="district-desc">Shigar Fort (Fong-Khar Palace), Sarfaranga Cold Desert, Khosar Gang Peak & Gateway to K2.</p>
+          <a href="https://wa.me/923555133394?text=Hi%20Adventure%20Rakaposhi!%20I%20would%20like%20to%20get%20a%20quote%20for%20a%20custom%20tour%20package%20in%20Shigar%20District." target="_blank" rel="noopener noreferrer" class="district-btn">
+            <i class="fa-brands fa-whatsapp"></i> Get Quote
+          </a>
+        </div>
+      </div>
+
+      <!-- Nagar -->
+      <div class="district-card" style="background-image: url('images/web/districts/nagar.jpg');">
+        <div class="district-overlay"></div>
+        <div class="district-content">
+          <span class="district-badge"><i class="fa-solid fa-gem"></i> Territory</span>
+          <h3 class="district-name">Nagar District</h3>
+          <p class="district-desc">Rakaposhi Peak (7,788m), Hoper Glacier, Rush Lake, Chumar Bakor Gemstone Mine & Minapin.</p>
+          <a href="https://wa.me/923555133394?text=Hi%20Adventure%20Rakaposhi!%20I%20would%20like%20to%20get%20a%20quote%20for%20a%20custom%20tour%20package%20in%20Nagar%20District." target="_blank" rel="noopener noreferrer" class="district-btn">
+            <i class="fa-brands fa-whatsapp"></i> Get Quote
+          </a>
+        </div>
+      </div>
+
+      <!-- Astore -->
+      <div class="district-card" style="background-image: url('images/web/districts/Deosai.jpg');">
+        <div class="district-overlay"></div>
+        <div class="district-content">
+          <span class="district-badge"><i class="fa-solid fa-tree"></i> Territory</span>
+          <h3 class="district-name">Astore District</h3>
+          <p class="district-desc">Rama Meadows & Lake, Minimarg Valley, Rainbow Lake, Domel & Burzil Pass High Plateau.</p>
+          <a href="https://wa.me/923555133394?text=Hi%20Adventure%20Rakaposhi!%20I%20would%20like%20to%20get%20a%20quote%20for%20a%20custom%20tour%20package%20in%20Astore%20District." target="_blank" rel="noopener noreferrer" class="district-btn">
+            <i class="fa-brands fa-whatsapp"></i> Get Quote
+          </a>
+        </div>
+      </div>
+
+      <!-- Ghanche -->
+      <div class="district-card" style="background-image: url('images/web/districts/LAILA peak.jpg');">
+        <div class="district-overlay"></div>
+        <div class="district-content">
+          <span class="district-badge"><i class="fa-solid fa-shield-halved"></i> Territory</span>
+          <h3 class="district-name">Ghanche District</h3>
+          <p class="district-desc">Khaplu Royal Fort, Chaqchan Mosque, Sailing Fish Farm, Hushe Valley & Masherbrum Base.</p>
+          <a href="https://wa.me/923555133394?text=Hi%20Adventure%20Rakaposhi!%20I%20would%20like%20to%20get%20a%20quote%20for%20a%20custom%20tour%20package%20in%20Ghanche%20District." target="_blank" rel="noopener noreferrer" class="district-btn">
+            <i class="fa-brands fa-whatsapp"></i> Get Quote
+          </a>
+        </div>
+      </div>
+
+      <!-- Diamer -->
+      <div class="district-card" style="background-image: url('images/web/districts/fairy_meadows.jpg');">
+        <div class="district-overlay"></div>
+        <div class="district-content">
+          <span class="district-badge"><i class="fa-solid fa-crown"></i> Territory</span>
+          <h3 class="district-name">Diamer District</h3>
+          <p class="district-desc">Fairy Meadows, Nanga Parbat Raikot Face (8,126m), Chilas Rock Carvings & Babusar Pass (4,170m).</p>
+          <a href="https://wa.me/923555133394?text=Hi%20Adventure%20Rakaposhi!%20I%20would%20like%20to%20get%20a%20quote%20for%20a%20custom%20tour%20package%20in%20Diamer%20District." target="_blank" rel="noopener noreferrer" class="district-btn">
+            <i class="fa-brands fa-whatsapp"></i> Get Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Adjacent Mountain Valleys & Extended Destinations: Chitral, Naran, Kaghan & Kalash -->
+  <section class="section container" id="extended-regions">
+    <div class="section-header">
+      <span class="section-subtitle">ADJACENT MOUNTAIN VALLEYS</span>
+      <h2 class="section-title">Chitral, Naran, Kaghan & Kalash Valleys</h2>
+      <p class="section-description">
+        Explore breathtaking mountain territories connecting with Gilgit-Baltistan across Khyber Pakhtunkhwa. From the ancient tribal celebrations of the Kalash Valleys and Tirich Mir in Chitral, to the fairy-tale waters of Lake Saif-ul-Malook in Naran and Kaghan.
+      </p>
+    </div>
+
+    <div class="districts-grid">
+      <!-- Chitral -->
+      <div class="district-card" style="background-image: url('images/web/districts/chitral.jpg');">
+        <div class="district-overlay"></div>
+        <div class="district-content">
+          <span class="district-badge"><i class="fa-solid fa-mountain"></i> Hindukush Realm</span>
+          <h3 class="district-name">Chitral District</h3>
+          <p class="district-desc">Tirich Mir (7,708m), historic Chitral Shahi Fort, Shandur High Pass (Highest Polo Ground), Ayun Valley, and ancient royal gateway.</p>
+          <a href="https://wa.me/923555133394?text=Hi%20Adventure%20Rakaposhi!%20I%20would%20like%20to%20get%20a%20quote%20for%20a%20custom%20tour%20package%20in%20Chitral%20District." target="_blank" rel="noopener noreferrer" class="district-btn">
+            <i class="fa-brands fa-whatsapp"></i> Get Quote
+          </a>
+        </div>
+      </div>
+
+      <!-- Naran -->
+      <div class="district-card" style="background-image: url('images/web/districts/naran.jpg');">
+        <div class="district-overlay"></div>
+        <div class="district-content">
+          <span class="district-badge"><i class="fa-solid fa-water"></i> Alpine Lake Paradise</span>
+          <h3 class="district-name">Naran Valley</h3>
+          <p class="district-desc">Legendary Lake Saif-ul-Malook, Babusar Pass (4,170m gateway to GB), Lulusar Lake, Ansoo Lake trek, and Kunhar River white-water rafting.</p>
+          <a href="https://wa.me/923555133394?text=Hi%20Adventure%20Rakaposhi!%20I%20would%20like%20to%20get%20a%20quote%20for%20a%20custom%20tour%20package%20in%20Naran%20Valley." target="_blank" rel="noopener noreferrer" class="district-btn">
+            <i class="fa-brands fa-whatsapp"></i> Get Quote
+          </a>
+        </div>
+      </div>
+
+      <!-- Kaghan -->
+      <div class="district-card" style="background-image: url('images/web/districts/kaghan.jpg');">
+        <div class="district-overlay"></div>
+        <div class="district-content">
+          <span class="district-badge"><i class="fa-solid fa-tree"></i> Pine Valleys & Meadows</span>
+          <h3 class="district-name">Kaghan Valley</h3>
+          <p class="district-desc">Lush alpine forests, Shogran pine plateau, Siri Paye cloud meadows, Kawai waterfall, and pristine Kunhar trout fishing streams.</p>
+          <a href="https://wa.me/923555133394?text=Hi%20Adventure%20Rakaposhi!%20I%20would%20like%20to%20get%20a%20quote%20for%20a%20custom%20tour%20package%20in%20Kaghan%20Valley." target="_blank" rel="noopener noreferrer" class="district-btn">
+            <i class="fa-brands fa-whatsapp"></i> Get Quote
+          </a>
+        </div>
+      </div>
+
+      <!-- Kalash -->
+      <div class="district-card" style="background-image: url('images/web/districts/kalash.jpg');">
+        <div class="district-overlay"></div>
+        <div class="district-content">
+          <span class="district-badge"><i class="fa-solid fa-masks-theater"></i> Ancient Heritage</span>
+          <h3 class="district-name">Kalash Valleys</h3>
+          <p class="district-desc">Bumburet, Rumbur & Birir valleys. Ancient indigenous animist culture, Chilam Joshi & Choimus festivals, traditional wooden temples & music.</p>
+          <a href="https://wa.me/923555133394?text=Hi%20Adventure%20Rakaposhi!%20I%20would%20like%20to%20get%20a%20quote%20for%20a%20custom%20tour%20package%20in%20Kalash%20Valleys." target="_blank" rel="noopener noreferrer" class="district-btn">
+            <i class="fa-brands fa-whatsapp"></i> Get Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destination Weddings Banner -->
+  <section class="section container" id="weddings">
+    <div class="wedding-banner">
+      <div class="wedding-content">
+        <span class="wedding-tag">Royal Himalayan Celebrations</span>
+        <h2 class="wedding-title">Destination Weddings in Gilgit-Baltistan</h2>
+        <p class="wedding-desc">
+          Say your vows against the mesmerizing backdrop of Attabad Lake's turquoise waters, Hunza's spring cherry blossoms, or Fairy Meadows alpine peaks. Complete event management, stage design, luxury transport, and gourmet catering.
+        </p>
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <button onclick="openCustomQuoteModal('Destination Wedding Package')" class="btn-primary-wa">
+            <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> Plan Wedding via WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trophy Hunting in Gilgit-Baltistan Section -->
+  <section class="section container" id="trophy-hunting">
+    <div class="trophy-section">
+      <div class="trophy-header">
+        <span class="trophy-tag"><i class="fa-solid fa-shield-halved"></i> Wildlife Conservation Expeditions</span>
+        <h2 class="trophy-title">Trophy Hunting in Gilgit-Baltistan</h2>
+        <p class="trophy-desc-lead">
+          Gilgit-Baltistan hosts an internationally acclaimed community-managed trophy hunting program where official auction proceeds directly empower local wildlife conservation and high-altitude mountain village development.
+        </p>
+        <p class="trophy-desc-sub">
+          Under strictly regulated annual government quotas, licensed hunting permits are auctioned for world-renowned alpine game including the iconic <strong>Astore Markhor</strong>, high-altitude <strong>Himalayan Ibex</strong>, and rare <strong>Blue Sheep (Bharal)</strong>.
+        </p>
+      </div>
+
+      <div class="trophy-animals-grid">
+        <div class="trophy-animal-card">
+          <span class="trophy-animal-badge"><i class="fa-solid fa-crown text-gold"></i> Premier National Trophy</span>
+          <h3 class="trophy-animal-name">Astore Markhor</h3>
+          <p class="trophy-animal-desc">
+            Pakistan's national animal, famed worldwide for its majestic flared spiral horns. Hunted under strict community-protected quotas across designated reserves in Gilgit, Astore, and Rondu.
+          </p>
+        </div>
+
+        <div class="trophy-animal-card">
+          <span class="trophy-animal-badge"><i class="fa-solid fa-mountain text-gold"></i> High-Altitude Alpine Crags</span>
+          <h3 class="trophy-animal-name">Himalayan Ibex</h3>
+          <p class="trophy-animal-desc">
+            Renowned for imposing ribbed scimitar horns reaching exceptional lengths. Thrives on precipitous cliffs across Hunza, Nagar, Skardu, Ghizer, and Diamer districts.
+          </p>
+        </div>
+
+        <div class="trophy-animal-card">
+          <span class="trophy-animal-badge"><i class="fa-solid fa-snowflake text-gold"></i> Remote Karakoram Rarity</span>
+          <h3 class="trophy-animal-name">Blue Sheep (Bharal)</h3>
+          <p class="trophy-animal-desc">
+            An elusive, agile high-elevation species inhabiting windswept moraines and scree slopes in Shimshal and Karakoram National Park, offering a world-class mountain expedition.
+          </p>
+        </div>
+      </div>
+
+      <div class="trophy-action-bar">
+        <div class="trophy-conservation-note">
+          <i class="fa-solid fa-circle-check text-forest" style="color: #4ade80; font-size: 1.1rem;"></i>
+          <span>80% of auction revenue goes directly to local mountain communities for schools, health clinics, and wildlife game guards.</span>
+        </div>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="https://wa.me/923555133394?text=Hi%20Adventure%20Rakaposhi!%20I%20am%20inquiring%20about%20the%20Gilgit-Baltistan%20Trophy%20Hunting%20auction%20permits%20and%20quotation%20(Astore%20Markhor%20/%20Himalayan%20Ibex%20/%20Blue%20Sheep)." target="_blank" rel="noopener noreferrer" class="btn-primary-wa">
+            <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> Get Quote via WhatsApp
+          </a>
+          <button onclick="openCustomQuoteModal('Trophy Hunting Permit (Markhor / Ibex / Blue Sheep)')" class="btn-secondary-outline" style="border-color: rgba(255,255,255,0.4); color: #FFF;">
+            <i class="fa-solid fa-sliders"></i> Inquire Details
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Guide & Seasons -->
+  <section class="section container" id="guide">
+    <div class="section-header">
+      <span class="section-subtitle">ESSENTIAL TRAVELER KNOWLEDGE</span>
+      <h2 class="section-title">Seasons & Permits Guide</h2>
+      <p class="section-description">Everything you need to know before visiting Gilgit-Baltistan, Pakistan.</p>
+    </div>
+
+    <div class="guide-grid">
+      <div class="guide-card">
+        <span class="guide-icon">🌸</span>
+        <h3 class="guide-card-title">Spring Blossom (Mar - Apr)</h3>
+        <p class="guide-card-text">Apricot, cherry, and almond trees blanket Hunza & Nagar in vibrant pink & white flowers. Mild climate ideal for sightseers.</p>
+      </div>
+      <div class="guide-card">
+        <span class="guide-icon">🏔️</span>
+        <h3 class="guide-card-title">Summer Treks (June - Sept)</h3>
+        <p class="guide-card-text">Prime window for high-altitude Karakoram glacier treks, K2 Base Camp, Concordia, and 5000m-8000m mountaineering summits.</p>
+      </div>
+      <div class="guide-card">
+        <span class="guide-icon">🍁</span>
+        <h3 class="guide-card-title">Golden Autumn (Oct - Nov)</h3>
+        <p class="guide-card-text">Valley leaves turn brilliant amber and gold against turquoise rivers. The top season for landscape photographers.</p>
+      </div>
+      <div class="guide-card">
+        <span class="guide-icon">🛡️</span>
+        <h3 class="guide-card-title">Visas & NOC Clearances</h3>
+        <p class="guide-card-text">Pakistan provides E-Visas for 190+ countries. We handle all restricted area NOC permits and licensed guides.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guest Testimonials -->
+  <section class="section container" id="testimonials">
+    <div class="section-header">
+      <span class="section-subtitle">REAL EXPERIENCE STORIES</span>
+      <h2 class="section-title">What Our Guests Say</h2>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="review-quote">"Adventure Rakaposhi organized our K2 Base Camp trek perfectly. The WhatsApp quote system was so quick and personalized. Their high-altitude team and camp chef were world class!"</p>
+        <div class="reviewer-meta">
+          <div class="reviewer-avatar">MK</div>
+          <div>
+            <div class="reviewer-name">Marcus K.</div>
+            <div class="reviewer-country">Zurich, Switzerland</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="review-quote">"We held our destination wedding at Attabad Lake through Adventure Rakaposhi. The setup over the turquoise water was breathtaking. All our guests were amazed!"</p>
+        <div class="reviewer-meta">
+          <div class="reviewer-avatar">SA</div>
+          <div>
+            <div class="reviewer-name">Sophia & Ali</div>
+            <div class="reviewer-country">London, UK</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="review-quote">"Climbed Laila Peak (6,096m) with Adventure Rakaposhi's guide team. Extremely professional high altitude support and safety focus!"</p>
+        <div class="reviewer-meta">
+          <div class="reviewer-avatar">DR</div>
+          <div>
+            <div class="reviewer-name">David R.</div>
+            <div class="reviewer-country">Melbourne, Australia</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Offering Modal Overlay -->
+  <div class="modal-overlay" id="detail-modal" aria-hidden="true">
+    <div class="modal-box">
+      <button onclick="closeModal('detail-modal')" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div id="detail-modal-content">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom WhatsApp Quote Builder Modal Overlay -->
+  <div class="modal-overlay" id="quote-modal" aria-hidden="true">
+    <div class="modal-box">
+      <button onclick="closeModal('quote-modal')" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      
+      <div style="text-align: center; margin-bottom: 24px;">
+        <i class="fa-brands fa-whatsapp text-forest" style="font-size: 3rem; margin-bottom: 12px;"></i>
+        <h2 style="font-size: 1.8rem; font-family: var(--font-heading);">Request WhatsApp Quotation</h2>
+        <p style="color: var(--text-muted); font-size: 0.88rem;">Specify your preferences and launch directly into WhatsApp Business.</p>
+      </div>
+
+      <form onsubmit="handleQuoteFormSubmit(event)">
+        <div class="form-group">
+          <label class="form-label" for="quote-offering-name">Selected Experience / Tour</label>
+          <input type="text" id="quote-offering-name" class="form-control" readonly style="background: var(--bg-secondary); border-color: var(--gold-accent); font-weight: 700; color: var(--forest-green);">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="quote-user-name">Your Full Name</label>
+          <input type="text" id="quote-user-name" class="form-control" placeholder="e.g. John Doe" required>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="form-group">
+            <label class="form-label" for="quote-travel-month">Target Month</label>
+            <select id="quote-travel-month" class="form-control">
+              <option value="March - April (Spring Blossom)">March - April (Spring Blossom)</option>
+              <option value="May - June (Early Summer)">May - June (Early Summer)</option>
+              <option value="July - August (Peak Treks)">July - August (Peak Treks)</option>
+              <option value="September - October (Autumn Foliage)">September - October (Autumn Foliage)</option>
+              <option value="November - February (Winter Snow)">November - February (Winter Snow)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="quote-group-size">Group Size</label>
+            <select id="quote-group-size" class="form-control">
+              <option value="Solo Traveler">Solo Traveler</option>
+              <option value="Couple (2 Persons)">Couple (2 Persons)</option>
+              <option value="Small Family (3-5 Persons)">Small Family (3-5 Persons)</option>
+              <option value="Group (6-12 Persons)">Group (6-12 Persons)</option>
+              <option value="Expedition Team (12+ Persons)">Expedition Team (12+ Persons)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="quote-special-notes">Special Preferences / Requirements</label>
+          <textarea id="quote-special-notes" class="form-control" placeholder="e.g., high-altitude porter support, vegetarian food, climbing gear rental, luxury hotel preferences..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary-wa" style="width: 100%; justify-content: center; padding: 14px; font-size: 1rem;">
+          <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> Generate & Send WhatsApp Quote
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Quick Action Button -->
+  <div class="floating-wa-widget">
+    <a href="https://wa.me/923555133394?text=Hi%20Adventure%20Rakaposhi!%20I%20am%20looking%20for%20information%20regarding%20tours%20in%20Gilgit-Baltistan." id="floating-wa-btn" target="_blank" rel="noopener noreferrer" class="floating-wa-btn" aria-label="Open WhatsApp chat">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <div class="floating-wa-tooltip">
+      <i class="fa-solid fa-circle" style="color: var(--whatsapp-green); font-size: 0.6rem; margin-right: 6px;"></i>
+      Online - Instant Quote Reply
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+            <img src="images/web/logo/logo.jpg" alt="Adventure Rakaposhi Emblem" class="footer-logo" width="129" height="129" onError="this.src='https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=200&q=80'">
+            <span style="font-family: var(--font-heading); font-weight: 700; font-size: 1.25rem; color: #FFF;">ADVENTURE RAKAPOSHI</span>
+          </div>
+          <p class="footer-brand-desc">
+            Gilgit-Baltistan's premier high-end tour operator specializing in Karakoram mountain treks, 5000m - 8000m expeditions, luxury destination weddings, and 4x4 safaris.
+          </p>
+          <div class="footer-socials" style="display: flex; gap: 14px; font-size: 1.35rem; margin-top: 18px;">
+            <a href="https://www.instagram.com/hussain_travel?stkn=MWN4OW56OHJlb2lyZA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1e9y3MTCi3/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer-social-link"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Top Destinations</h4>
+          <ul class="footer-links">
+            <li><a href="experiences.html?search=Hunza">Hunza & Nagar Valley</a></li>
+            <li><a href="experiences.html?search=Skardu">Skardu & Deosai Plains</a></li>
+            <li><a href="experiences.html?search=Nanga">Fairy Meadows & Nanga Parbat</a></li>
+            <li><a href="experiences.html?search=K2">Concordia & K2 Base Camp</a></li>
+            <li><a href="experiences.html?search=Chitral">Chitral & Kalash Valleys</a></li>
+            <li><a href="experiences.html?search=Naran">Naran & Kaghan Valleys</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Peak Expeditions</h4>
+          <ul class="footer-links">
+            <li><a href="experiences.html?category=treks">Alpine Treks & Hikes (16 Treks)</a></li>
+            <li><a href="experiences.html?category=expeditions">5000m - 8000m Summits</a></li>
+            <li><a href="experiences.html">All 30+ Curated Experiences</a></li>
+            <li><a href="gallery.html">Visual Photo Showcase (50+ Photos)</a></li>
+            <li><a href="#weddings">Attabad Lake Destination Weddings</a></li>
+            <li><a href="#trophy-hunting">GB Trophy Hunting Permits</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">WhatsApp Business Contact</h4>
+          <p style="font-size: 0.85rem; color: var(--text-light-muted); margin-bottom: 8px;">Official 24/7 Inquiries & Quotes:</p>
+          <div style="font-size: 1.25rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 8px;" id="wa-number-display">
+            +92 355 5133394
+          </div>
+          <a href="mailto:Adventurerakaposhi360@gmail.com" style="display: inline-block; max-width: 100%; font-size: 0.95rem; font-weight: 600; line-height: 1.35; color: var(--gold-accent); margin-bottom: 14px;">
+            Adventurerakaposhi360@<wbr>gmail.com
+          </a>
+          <a href="https://wa.me/923555133394?text=Hi%20Adventure%20Rakaposhi!%20I%20would%20like%20to%20inquire%20about%20your%20tours%20and%20expeditions." target="_blank" rel="noopener noreferrer" class="btn-primary-wa" style="display: inline-flex; padding: 11px 20px; font-size: 0.9rem; width: auto;">
+            <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Adventure Rakaposhi Tourism & Expeditions (Gilgit-Baltistan, Pakistan). All Rights Reserved. Powered by WhatsApp Business Integration.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script type="module" src="app.js?v=7"></script>
+</body>
+</html>

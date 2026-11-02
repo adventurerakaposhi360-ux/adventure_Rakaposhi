@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Photo Showcase & Gallery | Adventure Rakaposhi Gilgit-Baltistan</title>
+  <meta name="description" content="Explore high-resolution authentic photography of K2, Rakaposhi, Spantik, Attabad Lake, Fairy Meadows, and high Karakoram mountaineering expeditions.">
+  <meta name="keywords" content="Gilgit Baltistan Gallery, Karakoram Photography, K2 Photos, Rakaposhi Photos, Hunza Valley Photos, Attabad Lake Wedding, Skardu Landscape">
+
+  <!-- Google Fonts: Cormorant Garamond (Headings) + Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=10">
+</head>
+<body>
+
+  <!-- Sticky Glassmorphism Header -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="images/web/logo/logo.jpg" alt="Adventure Rakaposhi Logo" class="logo-badge" id="header-logo" width="160" height="160" onError="this.src='https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=200&q=80'">
+        <div class="logo-text-group">
+          <span class="brand-sub">Tourism & Expeditions</span>
+          <span class="brand-main">ADVENTURE RAKAPOSHI</span>
+          <span class="home-chip"><i class="fa-solid fa-house"></i> Home</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-pages">
+          <a href="experiences.html" class="nav-link">Experiences</a>
+          <a href="gallery.html" class="nav-link active">Visual Gallery</a>
+          <a href="index.html#districts" class="nav-link">Districts & Regions</a>
+          <a href="index.html#weddings" class="nav-link">Destination Weddings</a>
+          <a href="index.html#trophy-hunting" class="nav-link">Trophy Hunting</a>
+          <a href="index.html#guide" class="nav-link">Travel Guide</a>
+        </li>
+        <li class="nav-actions">
+          <div class="nav-contact">
+            <a href="index.html#contact" class="nav-link">Contact</a>
+            <div class="nav-socials-group">
+              <a href="https://www.instagram.com/hussain_travel?stkn=MWN4OW56OHJlb2lyZA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="nav-social-btn" aria-label="Follow Adventure Rakaposhi on Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/share/1e9y3MTCi3/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="nav-social-btn" aria-label="Follow Adventure Rakaposhi on Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+          <button onclick="openCustomQuoteModal('General Inquiry')" class="nav-cta-btn">
+            <i class="fa-brands fa-whatsapp" style="font-size: 1.1rem;"></i> WhatsApp Business
+          </button>
+        </li>
+      </ul>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Hero Banner -->
+  <section class="page-hero gallery-hero">
+    <div class="container page-hero-content">
+      <span class="page-hero-badge"><i class="fa-solid fa-camera"></i> Authentic High-Resolution Photography</span>
+      <h1 class="page-hero-title">Visual Photo Showcase</h1>
+      <p class="page-hero-desc">
+        Immerse yourself in authentic moments captured on our high-altitude Karakoram expeditions, glacial traverses, alpine summits, turquoise lake weddings at Attabad Lake, and rugged 4x4 safaris across Northern Pakistan.
+      </p>
+      <div class="page-hero-stats">
+        <div class="page-hero-stat-item">
+          <span class="page-hero-stat-num">50+</span>
+          <span class="page-hero-stat-label">High-Resolution Photos</span>
+        </div>
+        <div class="page-hero-stat-item">
+          <span class="page-hero-stat-num">4</span>
+          <span class="page-hero-stat-label">Showcase Categories</span>
+        </div>
+        <div class="page-hero-stat-item">
+          <span class="page-hero-stat-num">Full HD</span>
+          <span class="page-hero-stat-label">Interactive Lightbox</span>
+        </div>
+        <div class="page-hero-stat-item">
+          <span class="page-hero-stat-num">100%</span>
+          <span class="page-hero-stat-label">Authentic Expedition Shots</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Visual Gallery Section -->
+  <section class="section container" id="all-gallery">
+    <div class="section-header">
+      <span class="section-subtitle">EXPLORE THE ARCHIVE</span>
+      <h2 class="section-title">Gilgit-Baltistan & Karakoram Archive</h2>
+      <p class="section-description">
+        Click any photo to open in full-screen interactive lightbox mode with keyboard navigation. You can also inquire directly on WhatsApp regarding traveling to any captured location.
+      </p>
+    </div>
+
+    <!-- Gallery Category Filter Tabs -->
+    <div class="category-tabs" style="margin-bottom: 36px;">
+      <button class="tab-btn gallery-tab-btn active" data-category="all">
+        <i class="fa-solid fa-images"></i> All Photos
+      </button>
+      <button class="tab-btn gallery-tab-btn" data-category="mountains">
+        <i class="fa-solid fa-mountain"></i> Mountains & Peaks
+      </button>
+      <button class="tab-btn gallery-tab-btn" data-category="weddings">
+        <i class="fa-solid fa-ring text-gold"></i> Weddings & Ceremonies
+      </button>
+      <button class="tab-btn gallery-tab-btn" data-category="valleys">
+        <i class="fa-solid fa-water text-forest"></i> Valleys & Lakes
+      </button>
+      <button class="tab-btn gallery-tab-btn" data-category="vehicles">
+        <i class="fa-solid fa-truck-monster text-gold"></i> 4x4 Fleet & Gear
+      </button>
+    </div>
+
+    <!-- Masonry Grid for All Photos -->
+    <div class="gallery-grid" id="all-gallery-grid">
+      <!-- Injected dynamically via app.js -->
+    </div>
+  </section>
+
+  <!-- Fullscreen Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox-modal" aria-hidden="true">
+    <button onclick="closeLightbox()" class="modal-close-btn" style="top: 30px; right: 30px; background: rgba(255,255,255,0.2); color: #FFF;">&times;</button>
+    
+    <div class="lightbox-container">
+      <button class="lightbox-nav-arrow lightbox-prev" onclick="prevLightbox()"><i class="fa-solid fa-chevron-left"></i></button>
+      
+      <img src="" id="lightbox-img" alt="Gallery preview" class="lightbox-img">
+      
+      <button class="lightbox-nav-arrow lightbox-next" onclick="nextLightbox()"><i class="fa-solid fa-chevron-right"></i></button>
+
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+      <div class="lightbox-subcaption" id="lightbox-subcaption"></div>
+      
+      <a href="#" id="lightbox-wa-btn" target="_blank" rel="noopener noreferrer" class="btn-primary-wa" style="padding: 10px 24px; font-size: 0.88rem;">
+        <i class="fa-brands fa-whatsapp"></i> Inquire About This Location
+      </a>
+    </div>
+  </div>
+
+  <!-- Custom Quote Request Modal Form -->
+  <div class="modal-overlay" id="quote-modal" aria-hidden="true">
+    <div class="modal-card" style="max-width: 600px;">
+      <button onclick="closeModal('quote-modal')" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      
+      <div style="margin-bottom: 24px;">
+        <span class="hero-pill-dot" style="display: inline-block; margin-right: 8px;"></span>
+        <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--gold-accent); letter-spacing: 1px;">Official WhatsApp Business</span>
+        <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin-top: 6px;">Request Custom Quotation</h3>
+        <p style="font-size: 0.88rem; color: var(--text-muted);">Fill in your details below and we will automatically open WhatsApp with your customized inquiry pre-filled.</p>
+      </div>
+
+      <form id="custom-quote-form" onsubmit="handleQuoteFormSubmit(event)">
+        <input type="hidden" id="quote-offering-name" value="General Photography Tour Inquiry">
+
+        <div class="form-group">
+          <label class="form-label" for="quote-user-name">Your Full Name</label>
+          <input type="text" id="quote-user-name" class="form-control" placeholder="e.g. John Doe" required>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="form-group">
+            <label class="form-label" for="quote-travel-month">Target Month</label>
+            <select id="quote-travel-month" class="form-control">
+              <option value="March - April (Spring Blossom)">March - April (Spring Blossom)</option>
+              <option value="May - June (Early Summer)">May - June (Early Summer)</option>
+              <option value="July - August (Peak Treks)">July - August (Peak Treks)</option>
+              <option value="September - October (Autumn Foliage)">September - October (Autumn Foliage)</option>
+              <option value="November - February (Winter Snow)">November - February (Winter Snow)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="quote-group-size">Group Size</label>
+            <select id="quote-group-size" class="form-control">
+              <option value="Solo Traveler">Solo Traveler</option>
+              <option value="Couple (2 Persons)">Couple (2 Persons)</option>
+              <option value="Small Family (3-5 Persons)">Small Family (3-5 Persons)</option>
+              <option value="Group (6-12 Persons)">Group (6-12 Persons)</option>
+              <option value="Expedition Team (12+ Persons)">Expedition Team (12+ Persons)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="quote-special-notes">Special Preferences / Requirements</label>
+          <textarea id="quote-special-notes" class="form-control" placeholder="e.g., photography safari, drone filming permits, sunset viewpoints..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary-wa" style="width: 100%; justify-content: center; padding: 14px; font-size: 1rem;">
+          <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> Generate & Send WhatsApp Quote
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Quick Action Button -->
+  <div class="floating-wa-widget">
+    <a href="https://wa.me/923555133394?text=Hi%20Adventure%20Rakaposhi!%20I%20am%20looking%20for%20information%20regarding%20photo%20tours%20in%20Gilgit-Baltistan." id="floating-wa-btn" target="_blank" rel="noopener noreferrer" class="floating-wa-btn" aria-label="Open WhatsApp chat">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <div class="floating-wa-tooltip">
+      <i class="fa-solid fa-circle" style="color: var(--whatsapp-green); font-size: 0.6rem; margin-right: 6px;"></i>
+      Online - Instant Quote Reply
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+            <img src="images/web/logo/logo.jpg" alt="Adventure Rakaposhi Emblem" class="footer-logo" width="129" height="129" onError="this.src='https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=200&q=80'">
+            <span style="font-family: var(--font-heading); font-weight: 700; font-size: 1.25rem; color: #FFF;">ADVENTURE RAKAPOSHI</span>
+          </div>
+          <p class="footer-brand-desc">
+            Gilgit-Baltistan's premier high-end tour operator specializing in Karakoram mountain treks, 5000m - 8000m expeditions, luxury destination weddings, and 4x4 safaris.
+          </p>
+          <div class="footer-socials" style="display: flex; gap: 14px; font-size: 1.35rem; margin-top: 18px;">
+            <a href="https://www.instagram.com/hussain_travel?stkn=MWN4OW56OHJlb2lyZA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1e9y3MTCi3/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer-social-link"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Top Destinations</h4>
+          <ul class="footer-links">
+            <li><a href="experiences.html?search=Hunza">Hunza & Nagar Valley</a></li>
+            <li><a href="experiences.html?search=Skardu">Skardu & Deosai Plains</a></li>
+            <li><a href="experiences.html?search=Nanga">Fairy Meadows & Nanga Parbat</a></li>
+            <li><a href="experiences.html?search=K2">Concordia & K2 Base Camp</a></li>
+            <li><a href="experiences.html?search=Chitral">Chitral & Kalash Valleys</a></li>
+            <li><a href="experiences.html?search=Naran">Naran & Kaghan Valleys</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Peak Expeditions</h4>
+          <ul class="footer-links">
+            <li><a href="experiences.html?category=treks">Alpine Treks & Hikes (16 Treks)</a></li>
+            <li><a href="experiences.html?category=expeditions">5000m - 8000m Summits</a></li>
+            <li><a href="experiences.html">All 30+ Curated Experiences</a></li>
+            <li><a href="gallery.html">Visual Photo Showcase (50+ Photos)</a></li>
+            <li><a href="index.html#weddings">Attabad Lake Destination Weddings</a></li>
+            <li><a href="index.html#trophy-hunting">GB Trophy Hunting Permits</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">WhatsApp Business Contact</h4>
+          <p style="font-size: 0.85rem; color: var(--text-light-muted); margin-bottom: 8px;">Official 24/7 Inquiries & Quotes:</p>
+          <div style="font-size: 1.25rem; font-weight: 700; color: var(--gold-accent); margin-bottom: 8px;" id="wa-number-display">
+            +92 355 5133394
+          </div>
+          <a href="mailto:Adventurerakaposhi360@gmail.com" style="display: inline-block; max-width: 100%; font-size: 0.95rem; font-weight: 600; line-height: 1.35; color: var(--gold-accent); margin-bottom: 14px;">
+            Adventurerakaposhi360@<wbr>gmail.com
+          </a>
+          <a href="https://wa.me/923555133394?text=Hi%20Adventure%20Rakaposhi!%20I%20would%20like%20to%20inquire%20about%20your%20tours%20and%20expeditions." target="_blank" rel="noopener noreferrer" class="btn-primary-wa" style="display: inline-flex; padding: 11px 20px; font-size: 0.9rem; width: auto;">
+            <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Adventure Rakaposhi Tourism & Expeditions (Gilgit-Baltistan, Pakistan). All Rights Reserved. Powered by WhatsApp Business Integration.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script type="module" src="app.js?v=7"></script>
+</body>
+</html>

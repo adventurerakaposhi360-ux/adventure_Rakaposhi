@@ -1,0 +1,7 @@
+.DS_Store
+**/.DS_Store
+
+# Unused originals and the original site zip. GitHub rejects files over 100 MB,
+# and Vercel does not need photos the site never loads.
+images/archive/
+*.zip
