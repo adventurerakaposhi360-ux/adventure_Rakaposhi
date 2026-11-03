@@ -1888,15 +1888,24 @@ function setupNavbarScroll() {
 
   const mobileToggle = document.getElementById("mobile-toggle");
   const navMenu = document.getElementById("nav-menu");
+  const toggleIcon = mobileToggle?.querySelector("i");
 
   const setMenuOpen = (open) => {
     navMenu?.classList.toggle("active", open);
     navbar?.classList.toggle("menu-open", open);
     mobileToggle?.setAttribute("aria-expanded", open ? "true" : "false");
+    mobileToggle?.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
+    toggleIcon?.classList.toggle("fa-bars", !open);
+    toggleIcon?.classList.toggle("fa-xmark", open);
   };
 
-  mobileToggle?.addEventListener("click", () => {
+  mobileToggle?.addEventListener("click", (event) => {
+    event.stopPropagation();
     setMenuOpen(!navMenu?.classList.contains("active"));
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!navbar?.contains(event.target)) setMenuOpen(false);
   });
 
   navMenu?.querySelectorAll("a").forEach((link) => {

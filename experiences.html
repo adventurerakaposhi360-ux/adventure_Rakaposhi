@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=10">
+  <link rel="stylesheet" href="style.css?v=13">
 </head>
 <body>
 
@@ -31,12 +31,13 @@
     <div class="container nav-container">
       <a href="index.html" class="logo-link">
         <img src="images/web/logo/logo.jpg" alt="Adventure Rakaposhi Logo" class="logo-badge" id="header-logo" width="160" height="160" onError="this.src='https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=200&q=80'">
-        <div class="logo-text-group">
+      </a>
+      <div class="nav-side">
+        <a href="index.html" class="brand-link">
           <span class="brand-sub">Tourism & Expeditions</span>
           <span class="brand-main">ADVENTURE RAKAPOSHI</span>
           <span class="home-chip"><i class="fa-solid fa-house"></i> Home</span>
-        </div>
-      </a>
+        </a>
 
       <ul class="nav-menu" id="nav-menu">
         <li class="nav-pages">
@@ -48,8 +49,10 @@
           <a href="index.html#guide" class="nav-link">Travel Guide</a>
         </li>
         <li class="nav-actions">
-          <div class="nav-contact">
-            <a href="index.html#contact" class="nav-link">Contact</a>
+          <div class="nav-social-stack">
+            <button onclick="openCustomQuoteModal('General Inquiry')" class="nav-cta-btn">
+              <i class="fa-brands fa-whatsapp" style="font-size: 1.1rem;"></i> WhatsApp Business
+            </button>
             <div class="nav-socials-group">
               <a href="https://www.instagram.com/hussain_travel?stkn=MWN4OW56OHJlb2lyZA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="nav-social-btn" aria-label="Follow Adventure Rakaposhi on Instagram">
                 <i class="fa-brands fa-instagram"></i>
@@ -59,13 +62,11 @@
               </a>
             </div>
           </div>
-          <button onclick="openCustomQuoteModal('General Inquiry')" class="nav-cta-btn">
-            <i class="fa-brands fa-whatsapp" style="font-size: 1.1rem;"></i> WhatsApp Business
-          </button>
         </li>
       </ul>
+      </div>
 
-      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+      <button class="mobile-toggle" id="mobile-toggle" type="button" aria-label="Open navigation menu" aria-controls="nav-menu" aria-expanded="false">
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
@@ -292,6 +293,6 @@
   </footer>
 
   <!-- Main JavaScript File -->
-  <script type="module" src="app.js?v=7"></script>
+  <script type="module" src="app.js?v=8"></script>
 </body>
 </html>
